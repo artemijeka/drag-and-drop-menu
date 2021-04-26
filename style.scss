@@ -82,7 +82,10 @@ body {
     list-style: none;
     height: 50px;
     &:hover {
-      background-color: #03a9f4;
+      background-color: rgba(114, 188, 248, 0.50);
+      // background-color: #72BCF8;
+      // background-color: rgba(33, 150, 243, 0.50);
+      // background-color: #03a9f4;
     }
   }
 

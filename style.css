@@ -104,7 +104,7 @@ body {
   height: 50px;
 }
 .drag-drop-menu__item:hover {
-  background-color: #03a9f4;
+  background-color: rgba(114, 188, 248, 0.5);
 }
 .drag-drop-menu__link {
   display: -webkit-inline-box;
