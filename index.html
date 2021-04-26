@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop Menu | Перетаскиваемое меню</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- https://www.youtube.com/watch?v=sI2Oe7EkKMI -->
+  <script src="DragManager.js"></script>
+</head>
+
+<body>
+
+  <nav class="drag-drop-menu">
+    <button class="drag-drop-menu__toggle js-toggle"></button>
+    <ul class="drag-drop-menu__list">
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --home"></span>
+          <span class="drag-drop-menu__link-title">Главная</span>
+        </a>
+      </li>
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --profile"></span>
+          <span class="drag-drop-menu__link-title">Профиль</span>
+        </a>
+      </li>
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --messages"></span>
+          <span class="drag-drop-menu__link-title">Cообщения</span>
+        </a>
+      </li>
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --settings"></span>
+          <span class="drag-drop-menu__link-title">Настройки</span>
+        </a>
+      </li>
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --password"></span>
+          <span class="drag-drop-menu__link-title">Пароль</span>
+        </a>
+      </li>
+      <li class="drag-drop-menu__item">
+        <a href="" class="drag-drop-menu__link">
+          <span class="drag-drop-menu__ico --signout"></span>
+          <span class="drag-drop-menu__link-title">Выйти</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <script>
+    var dragDropMenu = document.querySelector('.drag-drop-menu');
+
+    
+
+    document.querySelector('.js-toggle').ondblclick = function () {
+      this.classList.toggle('--active');
+      dragDropMenu.classList.toggle('--active');
+    }
+
+
+
+    var dragManager = new DragManager('.drag-drop-menu');
+  </script>
+
+
+</body>
+
+</html>
